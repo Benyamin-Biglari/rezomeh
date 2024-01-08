@@ -22,9 +22,9 @@ from product import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('account',include('account_module.urls')),
+    path('account/',include('account_module.urls')),
     path('',views.index),
-    # path('contact/',views.contact),
+
 
 ]
 
