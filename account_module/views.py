@@ -13,9 +13,6 @@ class register(View):
     def post(self,request):
         form_reg=form.registerform(request.POST)
         if form_reg.is_valid():
-            print(form_reg.cleaned_data['username'])
-            print(form_reg.cleaned_data['email'])
-            print(form_reg.cleaned_data['desc'])
             new_message=models.register_model()
             new_message.username =form_reg.cleaned_data['username']
             new_message.email = form_reg.cleaned_data['email']
