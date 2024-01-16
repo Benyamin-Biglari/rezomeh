@@ -21,5 +21,4 @@ class register(View):
             new_message.is_active=False
             new_message.is_superuser=False
             new_message.save()
-
             return redirect('/')
